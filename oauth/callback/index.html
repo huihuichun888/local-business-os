@@ -1,0 +1,9 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex"><meta name="referrer" content="no-referrer">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; script-src 'sha256-c+86JBpdtZd0qWqs4j0smAPx1czfuBH0/Uv32Icst1Q='">
+<title>Connecting… · Local Business OS</title>
+<style>body{font:16px/1.6 system-ui,sans-serif;max-width:560px;margin:60px auto;padding:0 16px;color:#1d1d1b;background:#fbfaf7}</style></head><body>
+<h1>Finishing the connection…</h1>
+<p id="msg">You are being returned to the Local Business OS console on this computer.</p>
+<script>(function(){var p=new URLSearchParams(location.search),o=new URLSearchParams();["code","state","error","error_reason","error_description"].forEach(function(k){var v=p.get(k);if(v!==null)o.set(k,v);});if(!o.get("state")){document.getElementById("msg").textContent="Missing authorization data. Please start the connection again from the console.";return;}history.replaceState(null,"",location.pathname);location.replace("http://localhost:3000/api/meta/oauth/callback?"+o.toString());})();</script>
+</body></html>
